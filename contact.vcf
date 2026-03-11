@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Φαρμακείο;Nyma;;;
+FN:Nyma Φαρμακείο
+ORG:Nyma Φαρμακείο
+TITLE:Φαρμακείο & Ευεξία
+TEL;TYPE=WORK,VOICE:+302811810810
+EMAIL;TYPE=PREF,INTERNET:info@nymapharmacy.gr
+URL:https://www.instagram.com/nyma_pharmacy/
+ADR;TYPE=WORK:;;Νικολάου Κρασαδάκη & Αϊδινίου;Ηράκλειο;Κρήτη;71500;Ελλάδα
+NOTE:Σύγχρονη φαρμακευτική φροντίδα, εμπνευσμένη από τη φύση και τον άνθρωπο.
+REV:20231101T000000Z
+END:VCARD

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Nyma Pharmacy - Links & Επαφές</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #F7F9F5; /* Soft herbal tint */
+            color: #2D322E;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .header img {
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            color: #2D322E;
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #636C5D;
+            font-size: 0.95rem;
+        }
+
+        .cards-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .card {
+            width: 320px;
+            height: 200px; /* Standard business card aspect ratio */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            background: #ffffff;
+            border: 2px solid rgba(138, 154, 91, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Μεσαίο μπλοκ: κουμπιά & οδηγίες */
+        .middle-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 250px;
+            text-align: center;
+            gap: 12px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 999px;
+            border: none;
+            background: #8A9A5B; /* Sage Green */
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(138, 154, 91, 0.2);
+        }
+
+        .button:hover {
+            background: #6C7A4A;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(138, 154, 91, 0.3);
+        }
+
+        .btn-facebook { background: #1877F2; box-shadow: 0 4px 15px rgba(24, 119, 242, 0.2); }
+        .btn-facebook:hover { background: #166fe5; }
+
+        .btn-instagram { background: #E4405F; box-shadow: 0 4px 15px rgba(228, 64, 95, 0.2); }
+        .btn-instagram:hover { background: #d13b57; }
+
+        .btn-box { background: #55b938; box-shadow: 0 4px 15px rgba(85, 185, 56, 0.2); }
+        .btn-box:hover { background: #4ca632; }
+
+        .hint {
+            font-size: 0.8rem;
+            color: #636C5D;
+            max-width: 240px;
+            margin-top: 5px;
+        }
+
+        .divider {
+            width: 60%;
+            height: 1px;
+            background: rgba(138, 154, 91, 0.2);
+            margin: 10px 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #2D322E;
+            margin-bottom: -15px;
+            text-align: center;
+            width: 100%;
+        }
+
+        @media (max-width: 850px) {
+            .cards-wrapper {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .card {
+                width: 100%;
+                max-width: 380px;
+                height: auto;
+                aspect-ratio: 1.6 / 1;
+            }
+            .middle-block {
+                width: 100%;
+                max-width: 380px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <div class="header">
+        <img src="assets/images/real_logo.png" alt="Nyma Logo">
+        <h1>Nyma Pharmacy</h1>
+        <p>Σύγχρονη φαρμακευτική φροντίδα & ευεξία στο Ηράκλειο</p>
+    </div>
+
+    <!-- Nyma Pharmacy Main Card -->
+    <div class="cards-wrapper">
+        <div class="card">
+            <img src="assets/images/nyma_card_front.png" alt="Nyma Pharmacy (Front)">
+        </div>
+
+        <div class="middle-block">
+            <a class="button" href="contact.vcf" download>
+                <i class="fa-solid fa-address-card"></i> Αποθήκευση Επαφής
+            </a>
+            <a class="button btn-box" href="https://box.gr/delivery/irakleio-kritis/nyma-pharmacy" target="_blank">
+                <i class="fa-solid fa-box"></i> Παραγγελία (Box.gr)
+            </a>
+            <a class="button btn-facebook" href="https://www.facebook.com/nyma.pharmacy/?locale=el_GR" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+            <a class="button btn-instagram" href="https://www.instagram.com/nyma_pharmacy/" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <div class="hint">
+                Σε Android/iPhone πατήστε "Αποθήκευση Επαφής" και ανοίξτε το αρχείο για να προστεθεί στον κατάλογό σας.
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/images/nyma_card_back.png" alt="Nyma Pharmacy (Back)">
+        </div>
+    </div>
+
+    <div class="divider"></div>
+    <h2 class="section-title">Διανομή - Συνεργάτης</h2>
+
+    <!-- Matsamakis Delivery Card -->
+    <div class="cards-wrapper" style="flex-direction: column;">
+        <div class="card" style="box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
+            <img src="assets/images/matsamakis_card.png" alt="Manos Matsamakis (Διανομή)">
+        </div>
+
+        <div class="middle-block" style="flex-direction: row; flex-wrap: wrap;">
+            <a class="button" href="matsamakis.vcf" download style="max-width: 300px;">
+                <i class="fa-solid fa-address-card"></i> Αποθήκευση Επαφής
+            </a>
+        </div>
+        <div class="hint" style="text-align: center; margin-top: -5px;">
+            Manos Matsamakis - Parapharmaceutical Products
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
