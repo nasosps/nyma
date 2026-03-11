@@ -65,21 +65,120 @@
             width: 100%;
         }
 
-        .card {
-            width: 320px;
-            height: 200px; /* Standard business card aspect ratio */
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        /* Pure HTML/CSS Business Cards */
+        .biz-card {
             background: #ffffff;
-            border: 2px solid rgba(138, 154, 91, 0.2);
+            width: 360px;
+            height: 220px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            position: relative;
+            font-family: 'Inter', sans-serif;
+            color: #1E3932; /* Deep Pharmacy Green */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid rgba(138, 154, 91, 0.2);
+            text-align: left;
         }
-
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+        .nyma-card {
+            text-align: center;
+            align-items: center;
+            padding: 25px;
+        }
+        .nyma-card .address {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+        .nyma-card .address strong {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .capsule-logo {
+            width: 40px;
+            height: 70px;
+            border: 1.5px solid #1E3932;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .capsule-logo i {
+            font-size: 1.2rem;
+            color: #1E3932;
+        }
+        .nyma-card .contact-info {
+            font-size: 0.85rem;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+        .matsamakis-card {
+            padding: 25px;
+            justify-content: space-between;
+        }
+        .matsamakis-card .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .matsamakis-card .top-left {
+            display: flex;
+            align-items: center;
+        }
+        .matsamakis-card .slogan {
+            font-style: italic;
+            font-size: 0.7rem;
+            max-width: 90px;
+            margin-left: 10px;
+            line-height: 1.2;
+        }
+        .matsamakis-card .top-right {
+            text-align: right;
+        }
+        .matsamakis-card .name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+        .matsamakis-card .role {
+            font-size: 0.75rem;
+            line-height: 1.3;
+        }
+        .matsamakis-card .role-eng {
+            font-size: 0.7rem;
+            opacity: 0.8;
+        }
+        .matsamakis-card .company {
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        .matsamakis-card .bottom-section {
+            font-size: 0.7rem;
+            line-height: 1.5;
+            margin-top: auto;
+        }
+        .matsamakis-card .social {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 6px;
+            font-size: 0.75rem;
+        }
+        .social-icon {
+            background-color: #1E3932;
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.6rem;
         }
 
         /* Μεσαίο μπλοκ: κουμπιά & οδηγίες */
@@ -177,14 +276,11 @@
     </div>
 
     <!-- Nyma Pharmacy Main Card -->
-    <div class="cards-wrapper">
+    <div class="cards-wrapper" style="align-items: stretch;">
 
         <div class="middle-block">
             <a class="button" href="contact.vcf" download>
-                <i class="fa-solid fa-address-card"></i> Αποθήκευση Επαφής
-            </a>
-            <a class="button btn-box" href="https://box.gr/delivery/irakleio-kritis/nyma-pharmacy" target="_blank">
-                <i class="fa-solid fa-box"></i> Παραγγελία (Box.gr)
+                <i class="fa-solid fa-address-card"></i> κατέβασε την επαφή στο κινητό σου (Nyma)
             </a>
             <a class="button btn-facebook" href="https://www.facebook.com/nyma.pharmacy/?locale=el_GR" target="_blank">
                 <i class="fa-brands fa-facebook-f"></i> Facebook
@@ -192,13 +288,10 @@
             <a class="button btn-instagram" href="https://www.instagram.com/nyma_pharmacy/" target="_blank">
                 <i class="fa-brands fa-instagram"></i> Instagram
             </a>
-            <div class="hint">
-                Σε Android/iPhone πατήστε "Αποθήκευση Επαφής" και ανοίξτε το αρχείο για να προστεθεί στον κατάλογό σας.
-            </div>
         </div>
 
-        <div class="card">
-            <img src="assets/images/nyma_card_back.png" alt="Nyma Pharmacy (Back)">
+        <div class="card" style="box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
+            <img src="Card_nyma.jpg" alt="Nyma Pharmacy (Back)">
         </div>
     </div>
 
@@ -206,19 +299,27 @@
     <h2 class="section-title">Διανομή - Συνεργάτης</h2>
 
     <!-- Matsamakis Delivery Card -->
-    <div class="cards-wrapper" style="flex-direction: column;">
+    <div class="cards-wrapper">
         <div class="card" style="box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
-            <img src="assets/images/matsamakis_card.png" alt="Manos Matsamakis (Διανομή)">
+            <img src="Card_Manos_Matsamakis.jpg" alt="Manos Matsamakis (Διανομή)">
         </div>
 
         <div class="middle-block" style="flex-direction: row; flex-wrap: wrap;">
-            <a class="button" href="matsamakis.vcf" download style="max-width: 300px;">
-                <i class="fa-solid fa-address-card"></i> Αποθήκευση Επαφής
+            <a class="button" href="matsamakis.vcf" download style="max-width: 450px;">
+                <i class="fa-solid fa-address-card"></i> κατέβασε την επαφή στο κινητό σου (Ματσαμάκης) συνεργάτης δωρεάν διανομής
             </a>
         </div>
         <div class="hint" style="text-align: center; margin-top: -5px;">
             Μάνος Ματσαμάκης - <strong>Υπεύθυνος Delivery</strong> / Διανομή Προϊόντων
         </div>
+    </div>
+
+    <div class="divider"></div>
+    <div style="width: 100%; max-width: 380px; text-align: center; margin-top: 10px;">
+        <a class="button btn-box" href="https://box.gr/delivery/irakleio-kritis/nyma-pharmacy" target="_blank" style="padding: 18px 20px; font-size: 1.1rem;">
+            <i class="fa-solid fa-box" style="font-size: 1.3rem;"></i> Online Παραγγελία (Box.gr)
+        </a>
+        <div class="hint" style="margin: 10px auto 0;">Άμεση παράδοση των προϊόντων μας στο χώρο σας!</div>
     </div>
 
 </div>
