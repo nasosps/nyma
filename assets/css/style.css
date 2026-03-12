@@ -353,6 +353,11 @@ ul {
     gap: 1rem;
 }
 
+.hero-review-strip {
+    background: var(--bg-light);
+    padding: 1.5rem 0 2rem;
+}
+
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -788,10 +793,6 @@ ul {
     color: var(--text-muted);
 }
 
-.contact-cta {
-    margin: 0 0 2rem;
-}
-
 .btn-review {
     display: inline-flex;
     align-items: center;
@@ -951,8 +952,26 @@ ul {
     .nav-links { display: none; }
     .mobile-menu-btn { display: block; }
     
-    .hero h1 { font-size: 2.5rem; }
-    .glass-card { padding: 2rem 1.5rem; margin: 0 1rem; }
+    .hero {
+        min-height: auto;
+        padding: 5.2rem 1rem 1.25rem;
+    }
+    .hero-content { max-width: 100%; }
+    .hero h1 {
+        font-size: 1.9rem;
+        line-height: 1.2;
+        margin-bottom: 0.9rem;
+    }
+    .hero p {
+        font-size: 0.92rem;
+        line-height: 1.45;
+        margin-bottom: 1.1rem;
+    }
+    .glass-card {
+        padding: 1.35rem 1rem;
+        margin: 0 0.4rem;
+        border-radius: 24px;
+    }
     .hero-buttons {
         flex-direction: column;
         align-items: center;
@@ -963,6 +982,14 @@ ul {
         padding: 0.7rem 1.2rem;
         font-size: 0.92rem;
     }
+    .hero-review-strip {
+        padding: 1rem 0 1.35rem;
+    }
+    .btn-review {
+        width: min(100%, 320px);
+        justify-content: center;
+    }
+    .scroll-indicator { display: none; }
     
     .auto-grid { grid-template-columns: 1fr; }
     .about-image-wrapper { order: -1; max-width: 400px; margin: 0 auto; }
