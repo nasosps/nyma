@@ -355,7 +355,33 @@ ul {
 
 .hero-review-strip {
     background: var(--bg-light);
-    padding: 1.5rem 0 2rem;
+    padding: 0.7rem 0 1.35rem;
+    margin-top: -0.25rem;
+}
+
+.review-down-arrow {
+    margin: 0.7rem auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-dark);
+    border: 2px solid rgba(138, 154, 91, 0.4);
+    background: rgba(255, 255, 255, 0.8);
+    animation: reviewArrowBounce 1.8s infinite;
+}
+
+.review-down-arrow:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(138, 154, 91, 0.7);
+}
+
+@keyframes reviewArrowBounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(6px); }
+    60% { transform: translateY(3px); }
 }
 
 .scroll-indicator {
@@ -995,13 +1021,18 @@ ul {
         line-height: 1.2;
     }
     .hero-review-strip {
-        padding: 0.8rem 0 1.1rem;
+        padding: 0.45rem 0 0.95rem;
     }
     .btn-review {
         width: min(100%, 320px);
         padding: 0.7rem 1rem;
         font-size: 0.9rem;
         justify-content: center;
+    }
+    .review-down-arrow {
+        margin-top: 0.55rem;
+        width: 34px;
+        height: 34px;
     }
     .scroll-indicator { display: none; }
     
