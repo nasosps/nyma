@@ -514,15 +514,21 @@ ul {
 }
 
 .service-img-dermo {
+    object-fit: contain;
     object-position: center;
+    background: #eef1ea;
 }
 
 .service-img-supplements {
-    object-position: 68% center;
+    object-fit: contain;
+    object-position: center;
+    background: #eef1ea;
 }
 
 .service-img-baby {
-    object-position: 88% center;
+    object-fit: contain;
+    object-position: center;
+    background: #eef1ea;
 }
 
 .service-card:hover .card-img {
